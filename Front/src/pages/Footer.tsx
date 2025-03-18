@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const websiteTexts = [
-    "🌍 Explore Our Platform"
+    "Explore Our Platform"
   ];
 
   const [buttonText, setButtonText] = useState(websiteTexts[0]);
@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="mt-2 md:mt-3 text-sm">
               Your all-in-one solution for connecting with professional service providers across all industries.
             </p>
-            <div className="hidden md:flex justify-center md:justify-start space-x-4 mt-3 md:mt-4 text-gray-400">
+            <div className="flex md:hidden justify-center md:justify-start space-x-4 mt-3 md:mt-4 text-gray-400">
               <FaFacebookF className="cursor-pointer hover:text-white transition duration-300 transform hover:scale-110" />
               <FaTwitter className="cursor-pointer hover:text-white transition duration-300 transform hover:scale-110" />
               <FaInstagram className="cursor-pointer hover:text-white transition duration-300 transform hover:scale-110" />
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* 🌍 Main Website Button */}
+        {/* Main Website Button */}
         <div className="flex flex-col items-center mt-10">
           <button
             onClick={() => window.location.href = "http://d0lt.com"}
@@ -77,7 +77,7 @@ const Footer = () => {
           </button>
 
           {/* Social Media Icons Below the Button */}
-          <div className="flex justify-center space-x-4 mt-5 text-gray-400">
+          <div className="hidden md:flex justify-center space-x-4 mt-5 text-gray-400">
             <FaFacebookF className="cursor-pointer hover:text-yellow-400 transition duration-300 transform hover:scale-110" />
             <FaTwitter className="cursor-pointer hover:text-yellow-400 transition duration-300 transform hover:scale-110" />
             <FaInstagram className="cursor-pointer hover:text-yellow-400 transition duration-300 transform hover:scale-110" />
